@@ -102,9 +102,4 @@ def AUjibun_bank_balance_check(username, passwd):
 
     driver.quit()
     Process_Exit('true')
-
-if __name__=="__main__":
-    username = "test"
-    passwd = "test"
-    AUjibun_bank_balance_check(username, passwd)
     
