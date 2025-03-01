@@ -4,11 +4,16 @@
 
 Get your AU Jibun Bank balance easily with this Python package.
 
-## Install from source
+## Install from source①
 ```sh
 git clone https://github.com/Shibajob/AUjibun_bank_balance_check.git
 cd AUjibun_bank_balance_check
 pip install .
+```
+
+## Install from source②
+```sh
+pip install git+https://github.com/Shibajob/AUjibun_bank_balance_check.git
 ```
 
 ## Requirements
