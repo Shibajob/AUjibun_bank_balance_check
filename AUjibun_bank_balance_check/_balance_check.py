@@ -22,6 +22,7 @@ def balance_check(driver,wait, username,password):
         wait.until(EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/main/div[2]/div[1]/div[1]/div[1]/div/ul/li[1]/p")))
         balance = driver.find_element(By.XPATH, "/html/body/div[2]/main/div[2]/div[1]/div[1]/div[1]/div/ul/li[1]/p")
         logger.info(balance.text)#1,889,243円
+        return balance.text
     except Exception as e:
         logger.error  ("Balance check failed")
         logger.error ('=== Error Content ===')

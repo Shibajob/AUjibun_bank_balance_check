@@ -95,7 +95,9 @@ def AUjibun_bank_balance_check(username, passwd):
         Process_Exit('fail')
 
     try:
-        balance_check.balance_check(driver, wait, username, passwd)
+        balance = balance_check.balance_check(driver, wait, username, passwd)
+        logger.info(balance)
+        return balance
     except Exception:
         driver.quit()
         Process_Exit('fail')
